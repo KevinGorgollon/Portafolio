@@ -1,233 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Kevin</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
+    <div id="contenido">
+        <div class="container">
 
-    <!-- INICIO -->
-    <section class="inicio" id="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/logo.png" alt="logo">
-            </div>
-            <h1>Kevin Gorgollon</h1>
-            <h2>Analalista Programador - Desarrollador Back End</h2>
-            <div class="redes">
-                <a href="https://github.com/KevinGorgollon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/kevin-gorgollon/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-solid fa-rss"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, Soy Kevin Gorgollon.</span> Analista Programador recién egresado buscando experiencia en el
-                área de informática y seguir
-                aprendiendo nuevas tecnologías.
-                Capaz de formar equipos de trabajo, responsable, comprometido, proactivo, autodidacta,
-                colaborador, de rápido y constante aprendizaje.
-            </p>
-
-            <h3>Experiencia</h3>
-            <p class="exp">PYTHON, SQL, NOSQL, HTML, CSS, JAVA SCRIPT, REACT, SCRUM.</p>
-        </div>
-    </section>
-
-    <!-- CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="letter-image">
-                    <div class="animated-mail">
-                        <a download="" href="docs/Curriculum.pdf">
-                            <div class="back-fold"></div>
-                            <div class="letter">
-                                <div class="letter-border"></div>
-                                <div class="letter-title"></div>
-                                <div class="letter-context"></div>
-                                <div class="letter-stamp">
-                                    <div class="letter-stamp-inner"></div>
-                                </div>
-                            </div>
-                            <div class="top-fold"></div>
-                            <div class="body"></div>
-                            <div class="left-fold"></div>
-                    </div>
-                    <div class="shadow"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTAFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="Carrito de Compra">
-                    <div class="overlay">
-                        <a href="https://chipper-nougat-f056bd.netlify.app/" target="_blank">
-                            <h3>Carrito de Compra</h3>
-                        </a>
-                        <a href="https://chipper-nougat-f056bd.netlify.app/" target="_blank">
-                            <p>Click Para Entrar</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="Formulario">
-                    <div class="overlay">
-                        <a href="https://silly-nasturtium-b11d2b.netlify.app/" target="_blank">
-                            <h3>Formularo Enviar Mail</h3>
-                        </a>
-                        <a href="https://silly-nasturtium-b11d2b.netlify.app/" target="_blank">
-                            <p>Click Para Entrar</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="Buscar y Filtrar">
-                    <div class="overlay">
-                        <a href="https://scintillating-chaja-acfdd1.netlify.app" target="_blank">
-                            <h3>Buscar y Filtrar Autos</h3>
-                        </a>
-                        <a href="https://scintillating-chaja-acfdd1.netlify.app" target="_blank">
-                            <p>Click Para Entrar</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="Carrito de Compra">
-                    <div class="overlay">
-                        <h3>Por Hacer</h3>
-                        <p>Click Para Entrar</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="Carrito de Compra">
-                    <div class="overlay">
-                        <h3>Por Hacer</h3>
-                        <p>Click Para Entrar</p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="Carrito de Compra">
-                    <div class="overlay">
-                        <h3>Por Hacer</h3>
-                        <p>Click Para Entrar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenedor-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <form action="https://formsubmit.co/kevingorgollon19@gmail.com" method="POST">
-                        <input type="text" name="name" placeholder="Ingrese su Nombre">
-                        <input type="email" name="email" placeholder="Dirección de Correo">
-                        <input type="text" name="subject" placeholder="Tema">
-                        <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button>
-                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>
+            <h1>Local Storage</h1>
+            <div class="row">
+                <div class="six columns">
+                    <label for="tweet">Tweet:</label>
+                    <form  id="formulario">
+                            <label for="tweet"></label>
+                            <textarea id="tweet" class="u-full-width"></textarea>
+                            <input type="submit" class="button u-full-width button-primary" value="Agregar">
                     </form>
                 </div>
-
-                <!-- Mapa -->
-                <div class="col">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.0172276549993!2d-71.26514772340556!3d-32.897712769420444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689d274a69c7045%3A0x4cc20b3e99f3d6fe!2sGonzalo%20Landaeza%2C%20Quillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1683775624597!5m2!1ses!2scl"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Quillota, Gonzalo Landaeza
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Telefono: +56 983134907
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Correo: kevingorgollon19@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-
-
+                <div class="six columns">
+                    <h2>Mis Tweets</h2>
+                    <div id="lista-tweets"></div>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div> <!--#contenido-->
 
-    <!-- FOOTER -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://github.com/KevinGorgollon" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/kevin-gorgollon/" target="_blank"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a href=""><i class="fa-solid fa-rss"></i></a>
-        </div>
-    </footer>
-
-
-    <script src="script.js"></script>
-
+    <script src="js/app.js"></script>
 </body>
-
 </html>
